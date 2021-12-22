@@ -104,7 +104,7 @@ console.group("Círculos");
 console.groupEnd();
 
 
-// Nivel Intermedio:  Interacción con el HTML
+// NIVEL INTERMEDIO:  Interacción con el HTML
 
 
 //CUADRADO
@@ -185,3 +185,33 @@ function calcularAreaCirculo(){
 }
 
 
+// TRIANGULO ISÓSCELES
+
+
+function alturaTrianguloIsos (ladoa,ladob,base){
+
+    if (ladoa === ladob && ladoa != base){
+
+        const altura = Math.sqrt( (Math.pow(ladoa,2)) - (Math.pow(base,2) / 4));
+        
+        alert(`Es un Triángulo isósceles y su altura es : ${altura}` );
+    }else{
+
+        alert("No es un Triángulo Isósceles ");
+    }
+
+}
+
+function calcularAlturaTrianguloIsosceles(){
+
+    const inputLadoa = document.getElementById("inputLadoa");
+    const value1 = Number(inputLadoa.value);
+
+    const inputLadob = document.getElementById("inputLadob");
+    const value2 = Number(inputLadob.value);
+
+    const inputbase = document.getElementById("inputbase");
+    const value3 = Number(inputbase.value);
+
+    const altura = alturaTrianguloIsos(value1,value2,value3);
+}
