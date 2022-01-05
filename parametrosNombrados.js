@@ -17,9 +17,15 @@ function crearfinca ({ubicacion,precio,dimension,material='metal',dueños}){
 
 }
 
-crearfinca({
+const parametrosfinca = {
 
     ubicacion:"chucuni",
     precio: 2000, 
-    dimension:2000, 
-    dueños: ["Ismael" , "Nena"]}); 
+    dimension:2000,
+    undefined, 
+    dueños: ["Ismael" , "Nena"]
+
+};
+
+
+crearfinca(parametrosfinca);
