@@ -1,17 +1,17 @@
 const edades = [75,19,10,90,25,100];
 
 
-//Ordenado Ascendiente 
+//Ordenado Ascendente
 
-const descendente = edades.sort((a,b)=>{
+const ascendente = edades.sort((a,b)=>{
 
     return a - b; //-1
 
 });
 
-//Ordenado Descendiente   
+//Ordenado Descendente  
 
-const ascendente = edades.sort((a,b)=>{
+const descendente = edades.sort((a,b)=>{
 
     return b - a; //1
 
