@@ -26,3 +26,5 @@ const sincambios = edades.sort((a,b)=>{
 });
 
 console.log(edades);
+
+

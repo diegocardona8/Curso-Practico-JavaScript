@@ -4,10 +4,12 @@ function calcularMediana(lista){
     // Orden de la lista ingresada 
 
     const lista1 = lista.sort((a,b)=>a - b);
+    console.log(`${lista1}`);
 
     // Conociendo la mitad de la Lista (Posición)
 
     const mitadLista1 = parseInt(lista1.length / 2);
+    console.log(`la mitad es ${mitadLista1}`);
 
     //Función Validar si es par o no 
 
@@ -24,7 +26,7 @@ function calcularMediana(lista){
     }
 
 
-    let mediana;
+        let mediana;
 
     //Validación 
 
@@ -33,10 +35,14 @@ function calcularMediana(lista){
         const elemento1 = lista1[mitadLista1-1];
         const elemento2 = lista1[mitadLista1];
     
+        console.log(`elementos ${elemento1} ${elemento2} `);
+
         const promedioelementos = calcularMediaAritmetrica([
             elemento1, 
             elemento2,
         ]);
+
+        console.log(`el promedio  ${promedioelementos}`);
     
         mediana = promedioelementos;
     
